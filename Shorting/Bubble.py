@@ -14,6 +14,7 @@ class Solution:
                 break
 
         return nums
+    
 nums=[2,11,4,66,8,99]
 
 obj=Solution()
