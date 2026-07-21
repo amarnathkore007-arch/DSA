@@ -18,6 +18,6 @@ s = Solution()
 
 k = s.removeDuplicates(nums)
 
-print(k)
+
 print(nums)
 print(nums[:k])
