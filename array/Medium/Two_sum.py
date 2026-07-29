@@ -1,21 +1,30 @@
-#array is not sorted'
+class Solution:
+    def twoSum(self, nums, target):
+        hashmap = {}
 
-class solution:
-    def twosum(self,nums,target):
-        hashmap={}
         for i in range(len(nums)):
-            complement=target-nums[i]
+            complement = target - nums[i]
+
             if complement in hashmap:
-                return [hashmap[complement],i]
-            hashmap[nums[i]]=i
-nums=[1,4,2,5,6]
+                return [hashmap[complement], i], [complement, nums[i]]
+
+            hashmap[nums[i]] = i
+
+nums = [1, 4, 2, 5, 6]
 target = 7
 
-s = solution()
-indices, values = s.twosum(nums, target)
+s = Solution()
+indices, values = s.twoSum(nums, target)
 
 print("Indices:", indices)
 print("Values:", values)
+
+
+
+
+
+'--------------------------------------------------------------------------------------------------------------------------'
+
 
 
 #array is sorted
