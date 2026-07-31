@@ -1,5 +1,5 @@
 class Solution:
-    def nextPermutation(self, nums: List[int]) -> None:
+    def nextPermutation(self, nums):
         index = -1
 
         # Step 1: Find the pivot
