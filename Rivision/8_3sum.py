@@ -27,3 +27,32 @@ class Solution:
 arr = [-1, 0, 1, 2, -1, -4]
 obj = Solution()
 print(obj.threeSum(arr, len(arr)))
+
+
+
+
+
+
+
+
+class Solution:
+    def maxSubArray(self, nums):
+        max_sum=nums[0]
+        current_sum=0
+        for num in nums:
+            current_sum +=num
+            if current_sum > max_sum:
+                max_sum=current_sum
+            if current_sum < 0:
+                current_sum = 0
+        return max_sum
+    
+
+
+# Driver Code
+nums = [2, 3, 5, -2, 7, -4]
+
+obj = Solution()
+ans = obj.maxSubArray(nums)
+
+print(ans)
