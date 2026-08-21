@@ -47,8 +47,6 @@ class Solution:
                 current_sum = 0
         return max_sum
     
-
-
 # Driver Code
 nums = [2, 3, 5, -2, 7, -4]
 
