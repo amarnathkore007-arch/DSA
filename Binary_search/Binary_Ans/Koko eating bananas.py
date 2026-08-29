@@ -8,15 +8,23 @@ class Solution:
 
             hours = 0
 
-            # Calculate how many hours Koko needs
             for pile in piles:
                 hours += (pile + k - 1) // k
 
             if hours <= h:
-                # k is enough, try a smaller speed
                 high = k - 1
             else:
-                # k is too slow, increase speed
                 low = k + 1
 
         return low
+
+
+# Function call
+piles = [3, 6, 7, 11]
+h = 8
+
+obj = Solution()
+
+answer = obj.minEatingSpeed(piles, h)
+
+print(answer)
