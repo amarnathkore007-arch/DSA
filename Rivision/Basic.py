@@ -30,3 +30,14 @@ def printno(n):
     printno(n-1)
     print(n)
 printno(3)
+
+
+
+
+def twosum(nums,target):
+    hashmap={}
+    for i in range(len(nums)):
+        compliment = target - nums[i]
+        if compliment in hashmap:
+            return [hashmap[compliment],i]
+        hashmap[nums[i]]=i
