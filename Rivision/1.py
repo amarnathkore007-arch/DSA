@@ -1,19 +1,22 @@
-class Solution:
-    def search(self, nums, target):
-        left = 0
-        right = len(nums) - 1
+n=6
+flag=True
+for i in range(2,n):
+    if n % i == 0:
+        flag=False
+        break
+if flag:
+    print("Prime")
+else:
+    print("Not prime")
 
-        while left <= right:
-            mid = (left + right) // 2
 
-            if nums[mid] == target:
-                return mid
 
-            elif nums[mid] < target:
-                left = mid + 1
 
-            else:
-                right = mid - 1
-
-        return -1
-    
+n=10
+a=0
+b=1
+for i in range(n):
+    print(a,end=" ")
+    c=a+b
+    a=b
+    b=c

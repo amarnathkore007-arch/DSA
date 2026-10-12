@@ -1,4 +1,6 @@
-a, b = map(int, input().split())
+a=int(input("A="))
+b=int(input("B="))
+
 
 x = a
 y = b

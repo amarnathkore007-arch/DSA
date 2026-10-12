@@ -1,4 +1,6 @@
-a, b = map(int, input().split())
+a=int(input("A="))
+b=int(input("B="))
+
 
 while b != 0:
     r = a % b
